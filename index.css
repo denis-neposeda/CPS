@@ -1,0 +1,40 @@
+@import url(normalize.css);
+@import url(header/header.css);
+@import url(main/main.css);
+
+
+@font-face {
+    font-family: "TT Lakes Bold";
+    src: url("fonts/TTLakes-Bold.woff2") format("woff2"),
+    url("fonts/TTLakes-Bold.woff") format("woff");
+    font-style: normal;
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "TT Lakes Regular";
+    src:  url("fonts/TTLakes-Regular.woff2") format("woff2"),
+    url("fonts/TTLakes-Regular.woff") format("woff");
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "TT Lakes Medium";  
+    src: url("fonts/TTLakes-Medium.woff2") format("woff2"),
+    url("fonts/TTLakes-Medium.woff") format("woff");
+    font-style: normal;
+    font-weight: 500;
+}   
+
+
+body {
+    font-family: "TT Lakes Medium";
+    color: #1B1C21;
+    font-size: 16px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
