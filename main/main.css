@@ -22,6 +22,8 @@
     
 }
 
+/*                  Навигаци                      */
+
 .main__nav {
     position: relative;
     /* margin-left: 16px; */
@@ -72,18 +74,8 @@
     padding: 8px 11px;
 }
 
-.nav__repair-brends {
-}
-.nav__add-service {
-}
-.nav__price-service {
-}
-.nav__address {
-}
-.nav__spec-price {
-}
-.nav__comments {
-}
+/*                  Секция 1                      */
+
 .main__info {
     display: flex;
     flex-direction: column;
@@ -134,6 +126,12 @@
     position: relative;
     
 }
+
+/*                  Секция 2                      */
+
+
+
+/*                 АДАПТИВНОСТЬ                   */
 
 @media (min-width: 768px) {
     .main__title {

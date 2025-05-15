@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <title>Сервисный центр CPS</title>
 </head>
 <body>
@@ -12,7 +16,7 @@
         <header class="header">
             
             <ul class="header__menu">
-                <li class="header__menu-left">
+                <li class="header__menu-lneft">
                         <label class="burger_btn" for="burger_checkbox">
                             <input type="checkbox" id="burger_checkbox" class="burger_checkbox">
                             <div class="toggle">
@@ -20,9 +24,12 @@
                                 <span class="burger__line"></span>
                                 <span class="burger__line"></span>
                             </div>
-                           
+
+                            
 
                             <aside class="header__sidebar sidebar">
+
+                                <a href="#" class="header__logo"></a>
 
                                 <button class="sidebar__search"></button>
                                 <nav class="sidebar__nav">
@@ -111,8 +118,29 @@
 
             </section>
 
+            <section class="catalog__repair-brands">
+                <h2 class="repair-brands__title">Ремонт техники различных брендов</h2>
+                <div class="swiper">
+                 <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                 <!-- Slides -->
+                        <div class="swiper-slide">Slide 1</div>
+                        <div class="swiper-slide">Slide 2</div>
+                        <div class="swiper-slide">Slide 3</div>
+                    </div>
+                <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+                </div>
+            </section>
+            <section class="catalog__repair-technics"></section>
+            <section class="catalog__prise"></section>
+
         </main>
 
     </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="index.js"></script>
+    
 </body>
 </html>
