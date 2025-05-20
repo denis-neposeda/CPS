@@ -79,6 +79,7 @@
 .main__info {
     display: flex;
     flex-direction: column;
+    margin-bottom: 24px;
 }
 
 .info__about {
@@ -93,7 +94,7 @@
     line-height: 18px;
     font-family: "TT Lakes Regular";
     font-size: 14px;
-
+    letter-spacing: 0.2px;
 }
 
 .info__btn_read-more {
@@ -133,7 +134,7 @@
 
 /*                 АДАПТИВНОСТЬ                   */
 
-@media (min-width: 768px) {
+@media (min-width: 550px) {
     .main__title {
         margin: 0 0 32px 24px;
     }

@@ -1,0 +1,182 @@
+
+.catalog__repair-brands {
+    margin-bottom: 24px;
+}
+
+.catalog__title {
+    font-family: "TT Lakes Regular";
+    font-weight: 400;
+    line-height: 24px;
+    font-size: 16px;
+    letter-spacing: -0.2px;
+    color: #7E7E82;
+    text-transform: uppercase;
+
+    margin: 0 0 16px 0;
+    padding: 16px;
+
+    background: linear-gradient(to right, #F8F8F8 0%, #FFF 100%);
+}
+.swiper-wrapper {
+    margin-left: 16px;
+    margin-bottom: 28px;
+    row-gap: 16px;
+}
+.swiper-slide {
+    background-color: #fff;
+    border-radius: 6px;
+    border: 1px solid #EAEAEA;
+}
+
+.swiper-pagination {
+    --swiper-pagination-bottom: 0;
+    line-height: 12px;
+
+}
+
+
+.swiper .swiper-pagination-bullet {
+    background-color: #B5B6BC;
+    width: 12px;
+    height: 12px;
+}
+
+.repair-brands__swiper-slide {
+    min-height: 72px;
+    display: flex;
+    align-content: center;
+    box-sizing: border-box;
+    max-width: 240px;
+    
+}
+
+.repair-brands__swiper-slide img {
+    display: block;
+    margin-left: 16px;
+}
+
+
+.arrow {
+  cursor: pointer;
+  height: 40px;
+  right: 0;
+  position: absolute;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  transition: transform 0.1s;
+  width: 40px;
+  border: 2px solid #FF3E79;
+  border-radius: 50%;
+  box-sizing: border-box;
+}
+.arrow-top, .arrow-bottom {
+  background-color: #FF3E79;
+  height: 2px;
+  left: 13px;
+  position: absolute;
+  top: 50%;
+  width: 7.5px;
+  border-radius: 2px;
+
+}
+.arrow-top:after, .arrow-bottom:after {
+  background-color: #b60238;
+  content: "";
+  height: 100%;
+  position: absolute;
+  top: 0;
+  transition: all 0.15s;
+  border-radius: 2px;
+}
+.arrow-top {
+  transform: rotate(45deg);
+  transform-origin: bottom right;
+}
+.arrow-top:after {
+  left: 100%;
+  right: 0;
+  transition-delay: 0s;
+}
+.arrow-bottom {
+  transform: rotate(-45deg);
+  transform-origin: top right;
+}
+.arrow-bottom:after {
+  left: 0;
+  right: 100%;
+  transition-delay: 0.15s;
+}
+.arrow:hover .arrow-top:after {
+  left: 0;
+  transition-delay: 0.15s;
+}
+.arrow:hover .arrow-bottom:after {
+  right: 0;
+  transition-delay: 0s;
+}
+.arrow:active {
+  transform: translateX(-50%) translateY(-50%) scale(0.9);
+}
+
+
+.repair-brands__btn_show-hide {
+  appearance: none;
+  border: 0;
+  background: none;
+  
+  padding: 0;
+  margin: 0 0 0 24px;
+
+  outline: none;
+  cursor: pointer;
+
+  font-size: 16px;
+
+  max-height: 24px;
+
+  align-items: center;
+
+  display: none;
+}
+
+
+.repair-brands__btn_show-hide::before {
+  content: "";
+  background-image: url(pic/swg/arrow_show-hide.svg);
+  height: 24px;
+  width: 24px;
+
+
+}
+
+.show-content::before {
+  content: "";
+  transform: rotate(180deg);
+}
+
+
+@media (min-width: 550px) {
+  .swiper-wrapper {
+    margin-left: 24px;
+    margin-bottom: 24px;
+
+    flex-wrap: wrap;
+    row-gap: 16px;
+
+    max-height: 160px;
+    overflow: hidden;
+  }
+
+  .catalog__title {
+    padding-left: 24px;
+  }
+
+  .repair-brands__btn_show-hide {
+    display: flex;
+  }
+
+
+
+  
+
+}
