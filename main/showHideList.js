@@ -18,8 +18,5 @@ showHideBtn.addEventListener('click',
 
         showHideBtn.classList.toggle('show-content', (swiperWrapper.style.maxHeight === 'none'))
     }
-
-    
-
 )
 

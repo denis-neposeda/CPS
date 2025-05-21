@@ -26,6 +26,8 @@
     background-color: #fff;
     border-radius: 6px;
     border: 1px solid #EAEAEA;
+
+    box-sizing: border-box;
 }
 
 .swiper-pagination {
@@ -45,7 +47,6 @@
     min-height: 72px;
     display: flex;
     align-content: center;
-    box-sizing: border-box;
     max-width: 240px;
     
 }
@@ -155,6 +156,148 @@
 }
 
 
+.catalog__repair-technics {
+  margin-bottom: 24px;  
+}
+
+.catalog__repair-technics .swiper-slide {
+    width: 240px !important;
+    height: 160px !important;
+
+}
+
+.catalog__repair-technics .arrow {
+  top: auto;
+  bottom: 0;
+  
+}
+
+.swiper-slide h3 {
+  font-weight: 500;
+  margin-left: 16px;
+}
+
+
+.catalog__price .swiper-slide {
+  width: 260px !important;
+  height: 200px !important;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.price__item {
+  margin-left: 16px;
+
+  display: flex;
+  flex-direction: column;
+  row-gap: 4px;
+}
+
+.price__title {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+
+  letter-spacing: 0;
+
+  color: #7E7E82;
+  opacity: 0.72;
+
+  margin: 0;
+
+  text-align: start;
+}
+
+.price__text {
+  font-family: "TT Lakes Regular";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+
+  letter-spacing: 0.2px;
+
+  color: #1B1C21;
+
+  margin: 0;
+}
+
+.price__btn {
+  box-sizing: border-box;
+
+  border: 0;
+  background-color: #fff;
+  background-image: url(pic/png/btn__order.png);
+  
+  padding: 0;
+  margin: 0;
+
+  outline: none;
+  cursor: pointer;
+
+  position: absolute;
+
+  right: 16px;
+  bottom: 16px;
+
+
+  width: 119px;
+  height: 32px;
+}
+
+.table-wrapper {
+  margin: 0 24px;
+
+  display: none;
+}
+
+.price__row {
+  display: flex;
+
+  height: 63px;
+  
+  align-items: center;
+
+  border-bottom: 1px solid #EAEAEA;
+}
+
+.price__header {
+  padding: 0 16px;
+
+  border: none;
+}
+
+.price__row > div {
+  flex: 1;
+}
+
+.price__row > div:first-child {
+  flex: 3.5;
+
+}
+
+.price__row > div:last-child {
+  display: flex;
+  justify-content: end;
+
+}
+
+.price__row:last-child {
+  border: none;
+}
+
+.price__body {
+  background-color: #fff;
+  
+  border-radius: 8px;
+
+  padding: 0 16px;
+}
+
+
+
+
 @media (min-width: 550px) {
   .swiper-wrapper {
     margin-left: 24px;
@@ -175,8 +318,26 @@
     display: flex;
   }
 
+  .catalog__price .swiper {
+    display: none;
+  }
 
+  .table-wrapper {
+    display: block;
+  }
 
-  
+  .price__btn {
+    position: static;
+
+    display: block;
+  }
+
+  .price__title, .price__text {
+    margin: 0 4px;
+  }
+
+  .catalog__price > .catalog__title {
+  margin-bottom: 0;
+  }
 
 }
