@@ -105,12 +105,9 @@
             <section class="main__info">
 
                 <div class="info__about">
-                    <p class="info__text">Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.
-                        <br>
-                        <br>
-                    Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера, что подтверждает большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.</p>
+                    <p class="info__text" data-js-info-text>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita odit provident consequatur vero cupiditate aspernatur inventore quidem eius dolorum doloribus. Consectetur officia cupiditate, animi itaque doloremque nesciunt harum explicabo hic ipsam sapiente voluptate? Voluptatum quas earum exercitationem porro provident nostrum debitis quidem in totam aliquid, distinctio perspiciatis dolores. Commodi possimus suscipit veniam? Officia provident, sapiente eius laboriosam mollitia consequuntur, quis maiores neque quae voluptatum natus aliquid, reprehenderit eos! Quo officiis suscipit, iste dolorem ullam sit cum dolores? Voluptate ad quo ipsa omnis obcaecati provident vero ut debitis consectetur sapiente eligendi impedit assumenda, necessitatibus dicta sed amet animi illum rerum voluptates ipsum soluta et. Autem obcaecati neque veritatis est in nesciunt consequatur alias hic illum. Totam quibusdam veritatis expedita, nisi iusto, accusantium libero dolores explicabo nostrum dolorum debitis quas assumenda sit tempore similique officiis modi perferendis iste dignissimos cupiditate cum quae? Ab cupiditate fugit qui non impedit doloremque perspiciatis maxime fugiat.</p>
                     
-                    <button class="info__btn_read-more">Читать далее</button>
+                    <button class="info__btn_read-more" data-js-info-btn>Читать далее</button>
                     
                 </div>
 
@@ -119,7 +116,9 @@
             </section>
 
             <section class="catalog__repair-brands">
+
                 <h2 class="catalog__title">Ремонт техники различных брендов</h2>
+
                 <div class="swiper">
 
                     <!-- Additional required wrapper -->
@@ -227,7 +226,7 @@
                 <h2 class="catalog__title">Ремонт различных видов техники</h2>
 
                 <div class="swiper">
-                    <ul class="swiper-wrapper">
+                    <ul class="swiper-wrapper" data-js-tech-list>
                         <li class="swiper-slide">
                             <h3>Ремонт ноутбуков</h3>
                             <div class="arrow">
@@ -304,7 +303,7 @@
 
                 </div>
 
-                <button class="repair-brands__btn_show-hide">Показать все</button>
+                <button class="repair-brands__btn_show-hide" data-js-tech-btn>Показать все</button>
 
             </section>
             <section class="catalog__price">
@@ -454,13 +453,24 @@
 
             </section>
 
+
+            <footer class="footer">
+
+            <h4>© 2019 CPS <p>Разработано командой Apesong</p></h4>
+            <h4>Политика конфиденциальности</h4>
+            <h4>Информация, размещенная на данной странице, не является публичной офертой</h4>
+
+            </footer>
+
         </main>
 
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="main/swiper/swiper.js"></script>
-    <script src="main/showHideList.js"></script>
+    <script src="main/showHideBrandsBtn.js"></script>
+    <script src="main/showHideTechBtn.js"></script>
+    <script src="main/showHideInfoTextBtn.js"></script>
     
 </body>
 </html>

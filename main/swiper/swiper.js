@@ -1,7 +1,7 @@
 const swiper = new Swiper('.swiper',{
 
     breakpoints: {
-        550: {
+        768: {
             enabled: false,
         }
     },
