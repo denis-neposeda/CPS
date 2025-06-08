@@ -155,7 +155,7 @@
         max-width: none;
         /* width: calc(360px + (532 - 360) * ((100vw - 768px) / (1120 - 768))); */
 
-        width: 100%;
+        width: 50vw;
         height: 100%;
     }
 

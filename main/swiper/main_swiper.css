@@ -121,15 +121,7 @@
 
 
 .repair-brands__btn_show-hide {
-  appearance: none;
-  border: 0;
-  background: none;
-  
-  padding: 0;
-  margin: 0 0 0 24px;
-
-  outline: none;
-  cursor: pointer;
+  margin-left: 24px;
 
   font-size: 16px;
 

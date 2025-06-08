@@ -3,15 +3,18 @@
     min-width: 320px;
     background-color: #F8F8F8;
 }
+
 .header {
     background-color: white;
 }
+
 .header__menu {
     height: 88px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
+
 .header__menu-left {
     display: flex;
     justify-content: space-between;
@@ -20,8 +23,6 @@
     margin-left: 16px;
 }
 
-
-
 .burger_checkbox {
     display: none;
 }
@@ -29,7 +30,7 @@
 
 .toggle {
     position: absolute;   
-    z-index: 101;
+    z-index: 9;
     top: 24px;
     left: 16px;
     cursor: pointer;
@@ -149,9 +150,11 @@
 .burger_checkbox:checked ~ .header__sidebar {
     visibility: visible;
     transform: translateX(0%);
+
 }
 .burger_checkbox:checked ~ .toggle {
     position: fixed;
+    z-index: 110;
 }
 
 
@@ -283,13 +286,9 @@
 }
 
 
-
-
-
-
 @media (min-width: 768px) {
 
-        .header__menu-middle_disabled {
+    .header__menu-middle_disabled {
         display: flex;
     }
 
@@ -314,7 +313,7 @@
         margin-left: 24px;
     }
 
-    .header__sidebar ~ .header__logo {
+    .header__menu  .header__logo {
         left: 107px;
     }
 
@@ -390,10 +389,6 @@
         display: none;
     }
 
-    .header__sidebar > .header__logo {
-        display: none;
-    }
-
     .header__sidebar ~ .header__logo {
         z-index: 101;
         left: 24px;
@@ -409,8 +404,6 @@
     .burger_checkbox:checked ~ .header__logo {
         transform: none;
     }
-
-
 
 
 }

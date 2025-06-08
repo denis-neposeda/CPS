@@ -11,63 +11,13 @@
     <title>Сервисный центр CPS</title>
 </head>
 <body>
-    <div class="container">
+    <div class="container" data-js-container>
 
         <header class="header">
             
             <ul class="header__menu">
-                <li class="header__menu-lneft">
-                        <label class="burger_btn" for="burger_checkbox">
-                            <input type="checkbox" id="burger_checkbox" class="burger_checkbox">
-                            <div class="toggle">
-                                <span class="burger__line"></span>
-                                <span class="burger__line"></span>
-                                <span class="burger__line"></span>
-                            </div>
-
-                            
-
-                            <aside class="header__sidebar sidebar">
-
-                                <a href="#" class="header__logo"></a>
-
-                                <button class="sidebar__search"></button>
-                                <nav class="sidebar__nav">
-                                    <ul class="nav__list">
-                                        <li class="sidebar__item"><a href="#" class="sidebar__link">Ремонт техники</a></li>
-                                        <li class="sidebar__item"><a href="#" class="sidebar__link">Услуги и сервисы</a></li>
-                                        <li class="sidebar__item"><a href="#" class="sidebar__link">Корпоративным клиентам</a></li>
-                                        <li class="sidebar__item"><a href="#" class="sidebar__link">Продавцам техники</a></li>
-                                        <li class="sidebar__item"><a href="#" class="sidebar__link">Партнерам</a></li>
-                                        <li class="sidebar__item"><a href="#" class="sidebar__link">Производителям</a></li>
-                                        <li class="sidebar__item"><a href="#" class="sidebar__link">Наши сервисные центры</a></li>
-                                        <li class="sidebar__item"><a href="#" class="sidebar__link">Контакты</a></li>
-                                    </ul>
-                                </nav>
-                                
-                                <div class="sidebar__footer">
-                                    <ul class="sidebar__contacts">
-                                        <li><a href="#" class="sidebar__call call""></a></li>
-                                        <li><a href="#" class="sidebar__chat chat"></a></li>
-                                        <li><a href="#" class="sidebar__profile profile"></a></li>
-                                    </ul>
-                                    
-                                    <a href="mailto:mail@cps.com" class="saidbar__mail">mail@cps.com</a>
-                                    <a href="tel:+78008908900" class="sidebar__tel">8 800 890 8900</a>
-
-                                    <ul class="sidebar__language">
-                                        <li><a href="#" class="language_ru">RU</a></li>
-                                        <li><a href="#" class="language_en">EN</a></li>
-                                        <li><a href="#"class="language_ch">CH</a></li>
-                                    </ul>
-                                </div>
-                            </aside>
-
-                            <a href="#" class="header__logo"></a>
-
-                        </label>
-                    
-                    </a>
+                <li class="header__menu-left">
+                    <a href="#" class="header__logo"></a>
                 </li>
                 <li class="header__menu-middle_disabled">
                     <a class="menu-middle__call call"></a>
@@ -76,9 +26,9 @@
                 </li>
                 <li class="header__menu-right">
 
-                     <div class="divider"></div>
+                    <div class="divider"></div>
                      
-                     <a href="#" class="repair__link"></a>
+                    <a href="#" class="repair__link"></a>
 
                     <a href="#" class="check-status__link"></a>
                      
@@ -463,14 +413,98 @@
             </footer>
 
         </main>
+          
 
     </div>
+
+    <div data-js-modal-feedback-wrapper>
+        <div class="modal__feedback" data-js-modal-feedback>
+
+            <button class="modal__btn_close feedback__btn-close" data-js-feedback-btn-close></button>
+            <form action="" class="modal__form">
+                <h2 class="modal__title">Обратная связь</h2>
+                <input type="text" name="username" class="feedback__username" placeholder="Имя">
+                <input type="tel" name="tel" class="feedback__tel" placeholder="Телефон">
+                <input type="email" name="email" class="feedback__email" placeholder="Электронная почта">
+                <textarea name="message" class="feedback__message" placeholder="Сообщение"></textarea>
+                <p class="feedback__text">Нажимая “отправить”, вы даете согласие на <a href="">обработку персональных данных</a> и соглашаетесь с нашей <a href="">политикой конфиденциальности</a></p>
+                <button type="submit" class="modal__btn_submit"></button>
+            </form>
+
+        </div>
+    </div>
+
+    <div data-js-modal-call-wrapper>
+        <div class="modal__call" data-js-modal-call>
+            <button class="modal__btn_close call__btn-close" data-js-call-btn-close></button>
+
+            <form action="" class="modal__form">
+                <h2 class="modal__title">Заказать звонок</h2>
+                <input type="tel" name="tel" class="modal__tel" placeholder="Телефон">
+                <p class="modal__text">Нажимая “отправить”, вы даете согласие на <a href="">обработку персональных данных</a> и соглашаетесь с нашей <a href="">политикой конфиденциальности</a></p>
+                <button class="modal__btn_submit"></button>
+            </form>
+        </div>
+    </div>
+
+    <label class="burger_btn" for="burger_checkbox">
+        <input type="checkbox" id="burger_checkbox" class="burger_checkbox">
+        <div class="toggle" data-js-toggle-burger>
+            <span class="burger__line"></span>
+            <span class="burger__line"></span>
+            <span class="burger__line"></span>
+        </div>
+
+                            
+
+        <aside class="header__sidebar sidebar">
+
+            <a href="#" class="header__logo"></a>
+
+            <button class="sidebar__search"></button>
+            <nav class="sidebar__nav">
+                <ul class="nav__list">
+                    <li class="sidebar__item"><a href="#" class="sidebar__link">Ремонт техники</a></li>
+                    <li class="sidebar__item"><a href="#" class="sidebar__link">Услуги и сервисы</a></li>
+                    <li class="sidebar__item"><a href="#" class="sidebar__link">Корпоративным клиентам</a></li>
+                    <li class="sidebar__item"><a href="#" class="sidebar__link">Продавцам техники</a></li>
+                    <li class="sidebar__item"><a href="#" class="sidebar__link">Партнерам</a></li>
+                    <li class="sidebar__item"><a href="#" class="sidebar__link">Производителям</a></li>
+                    <li class="sidebar__item"><a href="#" class="sidebar__link">Наши сервисные центры</a></li>
+                    <li class="sidebar__item"><a href="#" class="sidebar__link">Контакты</a></li>
+                </ul>
+            </nav>
+                                
+            <div class="sidebar__footer">
+                <ul class="sidebar__contacts">
+                    <li><a href="#" class="sidebar__call call" data-js-call-btn></a></li>
+                    <li><a href="#" class="sidebar__chat chat" data-js-feedback-btn></a></li>
+                    <li><a href="#" class="sidebar__profile profile"></a></li>
+                </ul>
+                                    
+                <a href="mailto:mail@cps.com" class="saidbar__mail">mail@cps.com</a>
+                <a href="tel:+78008908900" class="sidebar__tel">8 800 890 8900</a>
+
+                <ul class="sidebar__language">
+                    <li><a href="#" class="language_ru">RU</a></li>
+                    <li><a href="#" class="language_en">EN</a></li>
+                    <li><a href="#"class="language_ch">CH</a></li>
+                </ul>
+            </div>
+                        
+            <a href="#" class="header__logo"></a>
+        </aside>
+
+                
+
+    </label>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="main/swiper/swiper.js"></script>
     <script src="main/showHideBrandsBtn.js"></script>
     <script src="main/showHideTechBtn.js"></script>
     <script src="main/showHideInfoTextBtn.js"></script>
+    <script src="modals/showModal.js"></script>
     
 </body>
 </html>

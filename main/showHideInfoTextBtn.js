@@ -20,3 +20,4 @@ showHideInfoTextBtn.addEventListener('click',
     }
 )
 
+

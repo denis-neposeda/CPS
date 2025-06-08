@@ -3,6 +3,7 @@
 @import url(header/header.css);
 @import url(main/main.css);
 @import url(main/swiper/main_swiper.css);
+@import url(modals/modal.css);
 
 
 
@@ -40,4 +41,16 @@ body {
 a {
     text-decoration: none;
     color: inherit;
+}
+
+button {
+  appearance: none;
+  border: 0;
+  background: none;
+  
+  padding: 0;
+  margin: 0;
+
+  outline: none;
+  cursor: pointer;
 }
