@@ -45,13 +45,23 @@ feedbackBtnClose.addEventListener('click',
     }
 )
 
-function handleOutside(event) {  
-    const isClickInside = !!event.target.closest('.modal__blur');  
-    if (!isClickInside) {  
-        function closedModal() {
-            modalFeedback.classList.remove('modal_open')
-            modalFeedbackWrapper.classList.remove('modal__blur')
-            };      
-        };
+modalCall.addEventListener('click', event => {
+    event._isClickWithInModal = true;
+});
 
-}  
+modalCallWrapper.addEventListener('click', event => {
+    if (event._isClickWithInModal) return;
+        event.currentTarget.classList.remove('modal__blur');
+        modalCall.classList.remove('modal_open');
+})
+
+modalFeedback.addEventListener('click', event => {
+    event._isClickWithInModal = true;
+});
+
+modalFeedbackWrapper.addEventListener('click', event => {
+    if (event._isClickWithInModal) return;
+        event.currentTarget.classList.remove('modal__blur');
+        modalFeedback.classList.remove('modal_open');
+})
+

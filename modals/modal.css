@@ -29,7 +29,7 @@
 .modal__blur {
     position: fixed;
     inset: 0;
-    z-index: 10;
+    z-index: 1000;
     backdrop-filter: blur(10px);
 }
 
@@ -180,6 +180,10 @@
 
     .modal_open {
         right: 440px;
+    }
+
+    .modal__blur {
+        z-index: 10;
     }
     
 
