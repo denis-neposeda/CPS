@@ -54,6 +54,9 @@
 .repair-brands__swiper-slide img {
     display: block;
     margin-left: 16px;
+    margin-top: auto;
+    margin-bottom: auto;
+    
 }
 
 
